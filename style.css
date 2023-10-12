@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, rgb(8, 4, 4) , blue);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hamburger{
+    position: fixed;
+    color: #6d6c6c;
+    transition: 0.3s;
+}
+.hamburger:hover{
+    color: #ffffff;
+    transition: 0.3s;
+}
+.content{
+    background-color: rgb(34, 34, 134);
+    border-radius: 30px;
+    /* height: 6500px; */
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.all{
+    margin-left: 20px;
+}
+.mainContent{
+    margin: 20px 0px 45px 0px;
+    display: flex;
+}
+.storyTag{
+    font-size: 25px;
+}
+.intro{
+    text-align: center;
+}
+.intro h4{
+    font-size: 50px;
+    background: linear-gradient(to left, rgb(8, 4, 4) , rgb(10, 10, 70));
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+.mainContent p, h6{
+    font-size: 12px;
+    color: #ffffff;
+    
+    margin: 7px 0px 7px 0px;
+}
+.mainContent h4{
+font-size: 25px;
+margin-bottom: 5px;
+color: #ffffff;
+}
+.mainContent h5{
+    font-size: 12px;
+    color: #ffffff;
+}
+.image_one{
+    width: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-size: 36px;
+  /* margin-left: 50px; */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-width: 425px) {
+    
+    .sell{
+        background-color: #c4c5f3;
+    }
+    .content{
+        background-color: transparent;
+    }
+  .sidenav {
+    padding-top: 15px;
+    width: 0;
+    text-align: center;
+    opacity: 96%;
+
+}
+  .sidenav a {
+    font-size: 60px;
+    padding-top: 30px;
+}
+
+
+.mainContent h4, h5, h5, h6 {
+    display: none;
+}
+.storyTag{
+    display: contents;
+}
+
+
+.content{
+    margin-top: -30px;
+}
+.mainContent{
+    flex-direction: column;
+    align-items: center;
+}
+.mainContent img{
+    width: 200px;
+}
+.mainContent p{
+    font-size: 15px;
+    text-align: center;
+    color: #111111;
+}
+.hamburger{
+    font-size: 120px;
+}
+}
+
+
+
+@media screen and (max-width: 320px) {
+    
+    .sell{
+        background-color: #c4c5f3;
+    }
+    .content{
+        background-color: transparent;
+    }
+  .sidenav {
+    padding-top: 15px;
+    width: 0;
+    text-align: center;
+    opacity: 96%;
+
+}
+  .sidenav a {
+    font-size: 60px;
+    padding-top: 30px;
+}
+
+.mainContent h4, h5, h5, h6 {
+    display: none;
+}
+.storyTag{
+    display: contents;
+}
+
+.content{
+    margin-top: -30px;
+}
+.mainContent{
+    flex-direction: column;
+    align-items: center;
+}
+.mainContent img{
+    width: 200px;
+}
+.mainContent p{
+    font-size: 15px;
+    /* align-items: center; */
+    text-align: center;
+    color: #111111;
+}
+.hamburger{
+    font-size: 120px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .mainContent h4{
+        display: none;
+    }
+    .mainContent p{
+        padding-top: 10px;
+        font-size: 17px;
+    }
+}
