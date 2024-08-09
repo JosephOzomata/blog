@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    background: linear-gradient(to right, rgb(8, 4, 4) , blue);
+    /* background: linear-gradient(to right, rgb(8, 4, 4) , blue); */
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
 }
 
 .nav{
@@ -12,18 +14,27 @@ body{
     padding: 20px;
 }
 
+
 .hamburger{
     position: fixed;
     color: #6d6c6c;
     transition: 0.3s;
+   
 }
 .hamburger:hover{
     color: #ffffff;
     transition: 0.3s;
+    
 }
 .content{
-    background-color: rgb(34, 34, 134);
-    border-radius: 30px;
+    /* background-color: rgb(34, 34, 134); */
+    background: linear-gradient(to left, #ff4b2b, #ff416c);
+    box-shadow: 0px 10px 20px black;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    /* border-radius: 30px; */
     /* height: 6500px; */
     width: 75%;
     margin: auto;
@@ -31,6 +42,7 @@ body{
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow: hidden;
 }
 .all{
     margin-left: 20px;
@@ -38,17 +50,30 @@ body{
 .mainContent{
     margin: 20px 0px 45px 0px;
     display: flex;
+    padding: 30px;
+    
 }
 .storyTag{
     font-size: 25px;
 }
 .intro{
     text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: #ffffff;
+    margin-top: -20px;
+    box-shadow: 0px 5px 20px black;
+    position: sticky;
 }
 .intro h4{
     font-size: 50px;
-    background: linear-gradient(to left, rgb(8, 4, 4) , rgb(10, 10, 70));
+    background: linear-gradient(to left, red , rgb(10, 10, 70));
     -webkit-text-fill-color: transparent;
+    padding-top: 10px;
+    
 	-webkit-background-clip: text;
 }
 .mainContent p, h6{
@@ -58,19 +83,32 @@ body{
     margin: 7px 0px 7px 0px;
 }
 .mainContent h4{
-font-size: 25px;
-margin-bottom: 5px;
-color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #ffffff;
 }
 .mainContent h5{
     font-size: 12px;
     color: #ffffff;
+}
+.himage{
+    width: 80px;
+    height: 80px;
+    overflow: hidden !important;   
 }
 .image_one{
     width: 300px;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+.image_one:hover{
+    
+    scale: 1.1;
+   
+    transition: 0.5s;
 }
 
 
